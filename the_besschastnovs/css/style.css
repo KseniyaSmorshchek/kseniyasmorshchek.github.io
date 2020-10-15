@@ -125,5 +125,5 @@ header {
 }
 
 .qp_container {
-    max-width: 99%;
+    max-width: 99% !important;
 }
