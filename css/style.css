@@ -110,3 +110,8 @@ header {
 .thanks__item:not(:last-child) {
     margin-bottom: 50px;
 }
+
+.qp_quiz {
+    margin-left: auto;
+    margin-right: auto;
+}
