@@ -40,6 +40,8 @@ header {
 .banner__img img {
     max-width: 550px;
     width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 .banner__text p {
@@ -114,4 +116,10 @@ header {
 .qp_quiz {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .qp_quiz {
+        max-width: 100% !important;
+    }
 }
