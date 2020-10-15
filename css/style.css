@@ -48,7 +48,7 @@ header {
     font-family: 'Raleway', sans-serif;
 }
 
-.reasons, .thanks, .quiz-questions {
+.reasons, .thanks {
     padding: 100px 0;
     background-color: #FAF9F5;
 }
@@ -110,4 +110,3 @@ header {
 .thanks__item:not(:last-child) {
     margin-bottom: 50px;
 }
-
