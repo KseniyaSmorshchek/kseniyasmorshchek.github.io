@@ -122,3 +122,9 @@ header {
 .quiz {
     padding-bottom: 70px;
 }
+
+@media screen and (max-width: 900px) {
+    .qp_quiz {
+        max-width: 100% !important;
+    }
+}
