@@ -123,3 +123,7 @@ header {
         max-width: 100% !important;
     }
 }
+
+.qp_container {
+    max-width: 99%;
+}
