@@ -1,0 +1,50 @@
+div {
+    width: 200px;
+    height: 100px;
+    background-color: #ffbd77;
+    border-radius: 15px;
+    margin: 40px 20px;
+  }
+  
+  #block1, #block2 {
+    background-color: transparent;
+    border: 2px solid #ffbd77;
+  }
+  
+  #block2 {
+    color: #ffbd77;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  #block1:hover {
+    background-color: #ffbd77;
+  }
+  
+  #block2:hover {
+    background-color: #ffbd77;
+    color: #fff;
+  }
+  #block3:hover {
+    width: 97%;
+  }
+  #block4:hover {
+    width: 80%;
+    transform: translateX(10%);
+    background: #b6ddea;
+  }
+  #block3 {
+    transition: all 0.8s;
+  }
+  
+  #block1 {
+    transition: all 1.2s;
+  }
+  
+  #block2 {
+    transition: all 0.7s;
+  }
+  
+  #block4 {
+    transition: all 1s;
+  }
