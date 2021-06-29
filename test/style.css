@@ -30,7 +30,7 @@ div {
   }
   #block4:hover {
     width: 80%;
-    transform: translateX(10%);
+    transform: translateX(10%), skew(15deg);
     background: #b6ddea;
   }
   #block3 {

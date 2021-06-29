@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+.container-fluid {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+h2 {
+    color: #363636;
+    font-size: 3.6rem;
+    font-weight: 200;
+    letter-spacing: 0.04em;
+    margin-bottom: 70px;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.banner {
+    padding-bottom: 60px;
+}
+.banner__img img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.banner__text p {
+    font-size: 1.4rem;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.reasons, .thanks, .photos {
+    padding: 100px 0;
+    background-color: #FAF9F5;
+}
+.reasons__item {
+    margin-bottom: 30px;
+}
+
+.reasons__item p {
+    position: relative;
+    padding-left: 35px;
+}
+
+.reasons__item::before {
+    content: "♥";
+    font-size: 2.5rem;
+    color: #D8D5CC;
+    position: absolute;
+    left: 15px;
+    top: -5px;
+}
+
+.memories, .final {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.memories__item {
+    background-color: #F3F3F3;
+    padding: 30px 30px 70px;
+    height: 100%;
+}
+
+.memories__item img {
+    max-width: 100%;
+}
+
+.memories__item-date {
+    font-size: 1.2rem;
+    color: #727272;
+    margin: 20px 0 20px;
+    font-weight: 300;
+}
+
+.thanks__item {
+    text-align: center;
+    position: relative;
+}
+
+.thanks__item::before {
+    content: "♥";
+    font-size: 2.5rem;
+    color: #D8D5CC;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -25px;
+}
+
+.thanks__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.qp_quiz {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .qp_quiz {
+        max-width: 100% !important;
+    }
+}
+
+.qp_container {
+    max-width: 99% !important;
+}
+
+.carousel-inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: auto;
+    height: auto;
+    color: #363636;
+    font-size: 3rem;
+}
+
+.carousel-inner::after {
+    height: 100px;
+}
+
+.carousel-caption {
+    bottom: -100px;
+    color: black;
+}
+
+.final {
+    text-align: center;
+}
+
+.final__image {
+    margin-top: 200px;
+}
+
+.final img {
+    max-width: 100%;
+}
+
