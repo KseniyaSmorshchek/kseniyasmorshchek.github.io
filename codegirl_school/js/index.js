@@ -117,9 +117,11 @@ function formRequest(e) {
         },
         success: function () {
             // $requestWrapper.addClass(resultClass);
+            console.log('wow');
         },
-        error: function () {
+        error: function (e) {
             // $errorMessage.removeClass('d-none');
+            console.log(e);
         }
     });
 }
