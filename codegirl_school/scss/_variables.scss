@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../assets/fonts/FuturaBookC.eot');
+    src: local('Futura Book Cyrillic'), local('FuturaBookC'), url('../assets/fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/FuturaBookC.woff') format('woff'), url('../assets/fonts/FuturaBookC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Colors
+$primary: #e6ddda;
+$secondary: #26201f;
+$body-color: #26201f;
+$light: #f6f1f0;
+$gray-100: #e4dedc;
+$gray-200: #dedcdc;
+// #e2d9d7
+$gray-300: #eeeded;
+$gray-400: #e6e4e3;
+$gray-500: #d9cecc;
+$gray-600: #666261;
+//Fonts
+$font-family-base: 'FuturaBookC',
+Arial,
+sans-serif;
+$font-size-base: 1.5rem;
+$font-size-lg: 4.25rem;
+$font-size-sm: 1.125rem;
+$h1-font-size: $font-size-lg;
+$h2-font-size: $font-size-lg;
+$h3-font-size: $font-size-base;
+//Buttons
+$btn-padding-y: 15px;
+$btn-padding-x: 35px;
+$btn-font-size: $font-size-sm;
+$btn-border-width: 0;
+$btn-box-shadow: 0;
+// $grid-breakpoints: ( xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px);
+// $container-max-widths: ( sm: 540px,
+// md: 720px,
+// lg: 960px,
+// xl: 1140px);
+@import "../../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,57 @@
+.card {
+    border: 0;
+    background-color: transparent;
+    &-header {
+        border-bottom: 1px solid #dedcdc;
+        background-color: transparent;
+        padding: 30px 15px 15px 0;
+        cursor: pointer;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            width: 10px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: $secondary;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transition: all .2s ease-in-out;
+            opacity: 1;
+            right: 0;
+            contain: strict;
+            transform: translate(0, calc(-50% + 6px));
+        }
+        &.collapsed {
+            border-bottom-width: 2px;
+            &:after {
+                transform: translate(0, calc(-50% + 6px));
+                will-change: translate, opacity;
+            }
+            &:before {
+                transform: translate(0, calc(-50% + 6px)) rotate(-90deg);
+                will-change: translate, rotate;
+            }
+        }
+        &:not(.collapsed) {
+            &:before {
+                transform: translate(0, calc(-50% + 6px)) rotate(-0deg);
+                opacity: 0;
+            }
+        }
+    }
+    &-body {
+        @media (max-width: 640px) {
+            font-size: 20px;
+        }
+        @media (max-width: 440px) {
+            ul {
+                padding-left: 0;
+            }
+        }
+    }
+    ul {
+        font-size: $font-size-sm;
+    }
+}
