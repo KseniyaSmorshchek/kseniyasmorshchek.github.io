@@ -103,8 +103,8 @@ function formRequest(e) {
     // $requestWrapper = $('.request'),
     //     resultClass = 'request--done',
     //     $errorMessage = $('.request__form-error-message'),
-    TOKEN = "690262192:AAFPK980L5YbeiukbB3SmGXueAv6y7dZ-ZQ",
-        CHAT_ID = "-235528261",
+    TOKEN = "1986807830:AAGFYbtAFGkpwgfWa6lqK7Q8HWkqtvF6jrA",
+        CHAT_ID = "-495628829",
         message = '*NEW STUDENT*\n\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nContact via: ' + inst;
 
     $.ajax({
