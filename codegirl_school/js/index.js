@@ -94,7 +94,7 @@ function formRequest(e) {
     //     $errorMessage = $('.request__form-error-message'),
     TOKEN = "1986807830:AAGFYbtAFGkpwgfWa6lqK7Q8HWkqtvF6jrA",
         CHAT_ID = "-495628829",
-        message = '*NEW STUDENT*\n\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nContact via: ' + inst;
+        message = '*NEW STUDENT*\n\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nInstagram: ' + inst;
 
     $.ajax({
         type: "POST",
