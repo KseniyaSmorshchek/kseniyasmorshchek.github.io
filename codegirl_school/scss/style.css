@@ -11501,6 +11501,67 @@ h2 {
   font-size: 2rem;
 }
 
+.request__form-validation:not(:last-child) {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.request__form-validation:not(:last-child):after {
+  content: 'Пожалуйста, заполните поле';
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  left: 48px;
+  color: red;
+  font-size: 15px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.request__form-validation:not(:last-child).invalid input {
+  border-bottom-color: red;
+}
+
+.request__form-validation:not(:last-child).invalid:after {
+  opacity: 1;
+}
+
+.request__form-field {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 370px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #26201f;
+  -webkit-transition: border-bottom-color 0.3s;
+  transition: border-bottom-color 0.3s;
+}
+
+.request__form-field:focus {
+  outline: none;
+  border-bottom-color: #26201f;
+}
+
+.request__form-field::-webkit-input-placeholder {
+  color: #26201f;
+}
+
+.request__form-field:-ms-input-placeholder {
+  color: #26201f;
+}
+
+.request__form-field::-ms-input-placeholder {
+  color: #26201f;
+}
+
+.request__form-field::placeholder {
+  color: #26201f;
+}
+
 .request .btn {
   padding-left: 60px;
   padding-right: 60px;
@@ -11644,7 +11705,7 @@ h2 {
 .price__item {
   background-color: #F6F1F0;
   border-radius: 7px;
-  padding: 25px 30px 200px;
+  padding: 25px 30px 140px;
 }
 
 .price__item-label {

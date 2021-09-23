@@ -38,6 +38,56 @@
     &__subtitle {
         font-size: 2rem;
     }
+
+    &__form-validation:not(:last-child) {
+        margin-bottom: 25px;
+        position: relative;
+
+        &:after {
+            content: 'Пожалуйста, заполните поле';
+            display: block;
+            position: absolute;
+            bottom: -25px;
+            left: 48px;
+            color: red;
+            font-size: 15px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        &.invalid {
+            input {
+                border-bottom-color: red;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__form-field {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+        max-width: 370px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: $secondary;
+        transition: border-bottom-color 0.3s;
+
+        &:focus {
+            outline: none;
+            border-bottom-color: $secondary;
+        }
+
+        &::placeholder {
+            color: $secondary;
+        }
+    }
+
     .btn {
         padding-left: 60px;
         padding-right: 60px;

@@ -4,8 +4,7 @@ $(document).ready(function () {
     $('.price__item').matchHeight();
     $('.btn--flowing-scroll').on('click', flowingScroll);
     $(".request__form").submit(formRequest);
-    console.log(4);
-    $('.form__validation input').on('blur', formValidationOnBlur);
+    $(".request__form-field").blur(formValidationOnBlur);
     $('.nav-link').on('click', scrollToNavItem);
     $(".carousel").on("touchstart", function (event) {
         var xClick = event.originalEvent.touches[0].pageX;
@@ -65,36 +64,26 @@ function flowingScroll(e) {
 }
 
 function formValidationOnBlur() {
-    // const type = $(this).attr('name');
-    // if (type === 'name') {
-    //     $(this).toggleClass('invalid', $(this).val().length === 0);
-    // }
-    // if (type === 'email') {
-    //     $(this).toggleClass('invalid', $(this).val().length === 0);
-    // }
-    // if (type === 'inst') {
-    //     $(this).toggleClass('invalid', $(this).val().length === 0);
-    // }
+    $(this).closest('.request__form-validation').toggleClass('invalid', $(this).val().length === 0);
 }
 
 function formValidationOnSubmit(e) {
-    // $(e.target).find('.form__validation input').each(function () {
-    //     if ($(this).val().length === 0) {
-    //         $(this).addClass('invalid');
-    //     }
-    // })
-    // if ($(e.target).find('.invalid').length) {
-    //     return false;
-    // }
-    // return true;
+    $(e.target).find('.request__form-field').each(function () {
+        if ($(this).val().length === 0) {
+            $(this).closest('.request__form-validation').addClass('invalid');
+        }
+    })
+    if ($(e.target).find('.invalid').length) {
+        return false;
+    }
+    return true;
 }
 
 function formRequest(e) {
     e.preventDefault();
-    // if (!formValidationOnSubmit(e)) {
-    //     return false;
-    // }
-    console.log(4);
+    if (!formValidationOnSubmit(e)) {
+        return false;
+    }
     const $formEl = $(this),
         name = $formEl.find('#name').val(),
         phone = $formEl.find('#phone').val(),
@@ -116,12 +105,11 @@ function formRequest(e) {
             text: message
         },
         success: function () {
-            // $requestWrapper.addClass(resultClass);
-            console.log('wow');
+            window.location.href = "https://school.codegirl.ru/public/course/fd13a49c-d7c6-4e21-a268-529d01fae528";
+
         },
         error: function (e) {
             // $errorMessage.removeClass('d-none');
-            console.log(e);
         }
     });
 }

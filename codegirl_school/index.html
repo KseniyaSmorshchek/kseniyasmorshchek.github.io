@@ -76,7 +76,7 @@
                     </ul>
                 </nav>
                 <div class="justify-content-end header__button">
-                    <a class="btn btn-primary btn--flowing-scroll" href="#price" role="button">Попробовать
+                    <a class="btn btn-primary btn--flowing-scroll" href="#request" role="button">Попробовать
                         бесплатно</a>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                             специально для
                             девушек по созданию веб-сайтов с использованием HTML и CSS.</p>
                         <!-- <p class="banner__info-start mb-3 mb-lg-5">15 ноября - 14 марта</p> -->
-                        <a class="btn btn-primary btn--flowing-scroll" href="#price" role="button">Попробовать
+                        <a class="btn btn-primary btn--flowing-scroll" href="#request" role="button">Попробовать
                             бесплатно</a>
                     </div>
                 </div>
@@ -487,14 +487,8 @@
                             <li>Бессрочный доступ ко всему контенту</li>
                         </ul>
                         <div class="price__buttons text-center mt-5">
-                            <a class="btn btn-primary"
-                               href="https://school.codegirl.ru/public/course/49895379-890a-41ae-93ad-67aaa188ae7b"
-                               target="_blank">Попробовать
+                            <a class="btn btn-primary btn--flowing-scroll" href="#request">Попробовать
                                 бесплатно</a>
-                            <a class="btn btn-primary active mt-4"
-                               href="https://school.codegirl.ru/public/course/8410bf2b-a2de-45d8-b309-097414e63f39"
-                               target="_blank">Купить в подарок
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -519,13 +513,7 @@
                         </ul>
                         <p class="price__item-date mt-5">Старт потока: ноябрь 2021г.</p>
                         <div class="price__buttons text-center mt-5">
-                            <a class="btn btn-primary"
-                               href="https://school.codegirl.ru/public/course/fd13a49c-d7c6-4e21-a268-529d01fae528"
-                               target="_blank">Попробовать бесплатно</a>
-                            <a class="btn btn-primary active mt-4"
-                               href="https://school.codegirl.ru/public/course/e9075809-7800-4e00-a299-c3fc05a70da7"
-                               target="_blank">Купить в подарок
-                            </a>
+                            <a class="btn btn-primary btn--flowing-scroll" href="#request">Попробовать бесплатно</a>
                         </div>
                     </div>
                 </div>
@@ -550,14 +538,8 @@
                             <li class="price__item-list-item">Возможность оплаты в рассрочку на 3 месяца</li>
                         </ul>
                         <div class="price__buttons text-center mt-5">
-                            <a class="btn btn-primary"
-                               href="https://school.codegirl.ru/public/course/a89d9b58-5a66-40ed-962f-57480cd31721"
-                               target="_blank">Попробовать
+                            <a class="btn btn-primary btn--flowing-scroll" href="#request">Попробовать
                                 бесплатно</a>
-                            <a class="btn btn-primary active mt-4"
-                               href="https://school.codegirl.ru/public/course/0f6e9ebc-9c9f-4492-8a02-0e2c7a738d39"
-                               target="_blank">Купить в подарок
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -825,22 +807,38 @@
                 </div>
             </div>
         </section>
-        <section class="request">
+        <section class="request" id="request">
             <div class="request__wrapper container" id="requestForm">
-                <div class="request__form-wrapper row text-center flex-column justify-content-center">
-                    <h2 class="request__title mb-4">Начни обучение уже сегодня!</h2>
-                    <p class="request__description mb-5">Просто переходи по ссылке в школу и ныряй в закулисье
-                        web-разработки!</p>
-                    <form class="request__form" action="">
-                        <input type="text" name="name" id="name">
-                        <input type="text" name="email" id="email">
-                        <input type="text" name="phone" id="phone">
-                        <input type="text" name="inst" id="inst">
-                        <input type="submit" id="">
-                    </form>
-                    <!-- <div>
-                        <a class="btn btn-primary btn--flowing-scroll" href="#price">Купить курс</a>
-                    </div> -->
+                <div class="request__form-wrapper row text-center justify-content-center">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div>
+                            <h2 class="request__title mb-4">Начни обучение уже сегодня!</h2>
+                            <p class="request__description mb-5">Просто заполни анкету, переходи по ссылке и ныряй в
+                                закулисье
+                                web-разработки!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="request__form" action="">
+                            <div class="request__form-validation">
+                                <input type="text" name="name" id="name" placeholder="Ваше имя*"
+                                       class="request__form-field">
+                            </div>
+                            <div class="request__form-validation">
+                                <input type="text" name="phone" id="phone" placeholder="Номер телефона*"
+                                       class="request__form-field">
+                            </div>
+                            <div class="request__form-validation">
+                                <input type="text" name="inst" id="inst" placeholder="Имя в Instagram*"
+                                       class="request__form-field">
+                            </div>
+                            <div class="request__form-validation">
+                                <input type="text" name="email" id="email" placeholder="Email*"
+                                       class="request__form-field">
+                            </div>
+                            <input type="submit" id="submit" class="btn btn-primary mt-4" value="Попробовать бесплатно">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -860,7 +858,6 @@
                 </div>
             </div>
         </section>
-        <!-- <script>var BLINGER_ID = "c4249013-631d-4f0b-8e00-8a58fe361125"; (function (d) { var s = d.createElement("script"); s.async = true; s.charset = "utf-8"; s.src = "https://widget.hugery.com/blinger-widget.js"; d.head.appendChild(s); })(window.document);</script> -->
     </main>
     <footer></footer>
 </body>
