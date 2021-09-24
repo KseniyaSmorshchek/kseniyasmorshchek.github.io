@@ -1,7 +1,7 @@
 $(document).ready(function () {
     hidePrice();
-    // $('#carouselReviews .carousel-item').matchHeight();
-    // $('.price__item').matchHeight();
+    $('#carouselReviews .carousel-item').matchHeight();
+    $('.price__item').matchHeight();
     $('.btn--flowing-scroll').on('click', flowingScroll);
     $(".request__form").submit(formRequest);
     $(".request__form-field").blur(formValidationOnBlur);
