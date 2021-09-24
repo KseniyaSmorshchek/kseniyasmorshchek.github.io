@@ -81,20 +81,18 @@ function formValidationOnSubmit(e) {
 
 function formRequest(e) {
     e.preventDefault();
-    if (!formValidationOnSubmit(e)) {
-        return false;
-    }
+    // if (!formValidationOnSubmit(e)) {
+    //     return false;
+    // }
     const $formEl = $(this),
         name = $formEl.find('#name').val(),
         phone = $formEl.find('#phone').val(),
         email = $formEl.find('#email').val(),
         inst = $formEl.find('#inst').val();
-    // $requestWrapper = $('.request'),
-    //     resultClass = 'request--done',
-    //     $errorMessage = $('.request__form-error-message'),
+    contactVia = $formEl.find('input[name="contact"]:checked').val();
     TOKEN = "1986807830:AAGFYbtAFGkpwgfWa6lqK7Q8HWkqtvF6jrA",
         CHAT_ID = "-495628829",
-        message = '*NEW STUDENT*\n\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nInstagram: ' + inst;
+        message = '*NEW STUDENT*\n\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nInstagram: ' + inst + '\nContact Via: ' + contactVia;
 
     $.ajax({
         type: "POST",

@@ -4,6 +4,7 @@
     margin-top: -210px;
     position: relative;
     z-index: 0;
+
     &__wrapper {
         padding: 70px 90px;
         @media (max-width: 992px) {
@@ -24,19 +25,28 @@
                 height: 120px;
             }
             background-image: url('../assets/img/request.svg');
+            z-index: -1;
         }
     }
+
     &__form-wrapper {
         display: flex;
     }
+
     &__result {
         display: none;
     }
+
     &__description {
         font-size: 1.5rem;
     }
+
     &__subtitle {
         font-size: 2rem;
+    }
+
+    &__form-validation {
+        display: flex;
     }
 
     &__form-validation:not(:last-child) {
@@ -67,11 +77,9 @@
     }
 
     &__form-field {
-        margin: 0 auto;
         display: inline-block;
         padding: 10px 0;
         width: 100%;
-        max-width: 370px;
         background: transparent;
         border: none;
         border-bottom: 1px solid #fff;
@@ -87,6 +95,62 @@
             color: $secondary;
         }
     }
+
+    &__form-radio {
+        p {
+            font-size: $font-size-base;  
+            text-align: left;
+        }
+        &-container {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            padding-left: 35px;
+            text-align: left;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            border: 2px solid $secondary;
+
+            &:after {
+                content: '';
+                position: absolute;
+                height: 14px;
+                width: 14px;
+                background: $secondary;
+                border-radius: 50%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .request__form-radio-icon:after {
+                opacity: 1;
+            }
+        }
+}
 
     .btn {
         padding-left: 60px;
