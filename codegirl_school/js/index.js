@@ -2,24 +2,24 @@ $(document).ready(function () {
     hidePrice();
     $('#carouselReviews .carousel-item').matchHeight();
     $('.price__item').matchHeight();
-    // $('.btn--flowing-scroll').on('click', flowingScroll);
+    $('.btn--flowing-scroll').on('click', flowingScroll);
     $(".request__form").submit(formRequest);
     $(".request__form-field").blur(formValidationOnBlur);
-    // $('.nav-link').on('click', scrollToNavItem);
-    $(".carousel").on("touchstart", function (event) {
-        var xClick = event.originalEvent.touches[0].pageX;
-        $(this).one("touchmove", function (event) {
-            var xMove = event.originalEvent.touches[0].pageX;
-            if (Math.floor(xClick - xMove) > 5) {
-                $(this).carousel('next');
-            } else if (Math.floor(xClick - xMove) < -5) {
-                $(this).carousel('prev');
-            }
-        });
-        $(".carousel").on("touchend", function () {
-            $(this).off("touchmove");
-        });
-    });
+    $('.nav-link').on('click', scrollToNavItem);
+    // $(".carousel").on("touchstart", function (event) {
+    //     var xClick = event.originalEvent.touches[0].pageX;
+    //     $(this).one("touchmove", function (event) {
+    //         var xMove = event.originalEvent.touches[0].pageX;
+    //         if (Math.floor(xClick - xMove) > 5) {
+    //             $(this).carousel('next');
+    //         } else if (Math.floor(xClick - xMove) < -5) {
+    //             $(this).carousel('prev');
+    //         }
+    //     });
+    //     $(".carousel").on("touchend", function () {
+    //         $(this).off("touchmove");
+    //     });
+    // });
 });
 
 $(window).scroll(function () {
