@@ -1,7 +1,7 @@
 $(document).ready(function () {
     hidePrice();
-    // $('#carouselReviews .carousel-item').matchHeight();
-    // $('.price__item').matchHeight();
+    $('#carouselReviews .carousel-item').matchHeight();
+    $('.price__item').matchHeight();
     $('.btn--flowing-scroll').on('click', flowingScroll);
     $(".request__form").submit(formRequest);
     $(".request__form-field").blur(formValidationOnBlur);
@@ -30,14 +30,14 @@ $(document).ready(function () {
 //     checkBlock();
 // });
 
-// $(window).on('resize', function () {
-//     $(function () {
-//         $('#carouselReviews .carousel-item').matchHeight();
-//     });
-//     $(function () {
-//         $('.price__item').matchHeight();
-//     });
-// });
+$(window).on('resize', function () {
+    $(function () {
+        $('#carouselReviews .carousel-item').matchHeight();
+    });
+    $(function () {
+        $('.price__item').matchHeight();
+    });
+});
 
 function hidePrice() {
     $.get("https://freegeoip.app/json/", function (response) {
