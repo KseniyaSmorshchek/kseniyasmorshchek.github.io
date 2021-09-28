@@ -34,9 +34,9 @@ $(window).on('resize', function () {
     // $(function () {
     //     $('#carouselReviews .carousel-item').matchHeight();
     // });
-    $(function () {
-        $('.price__item').matchHeight();
-    });
+    // $(function () {
+    //     $('.price__item').matchHeight();
+    // });
 });
 
 function hidePrice() {
