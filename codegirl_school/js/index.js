@@ -22,22 +22,22 @@ $(document).ready(function () {
     });
 });
 
-// $(window).scroll(function () {
-//     const $header = $('.header'),
-//         scroll = $(window).scrollTop();
+$(window).scroll(function () {
+    const $header = $('.header'),
+        scroll = $(window).scrollTop();
 
-//     $header.toggleClass('header--fixed', scroll >= $header.height());
-//     checkBlock();
-// });
-
-$(window).on('resize', function () {
-    $(function () {
-        $('#carouselReviews .carousel-item').matchHeight();
-    });
-    $(function () {
-        $('.price__item').matchHeight();
-    });
+    $header.toggleClass('header--fixed', scroll >= $header.height());
+    checkBlock();
 });
+
+// $(window).on('resize', function () {
+//     $(function () {
+//         $('#carouselReviews .carousel-item').matchHeight();
+//     });
+//     $(function () {
+//         $('.price__item').matchHeight();
+//     });
+// });
 
 function hidePrice() {
     $.get("https://freegeoip.app/json/", function (response) {
