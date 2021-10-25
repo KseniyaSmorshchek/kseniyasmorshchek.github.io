@@ -1,14 +1,12 @@
-$(document).ready(function () {
+$(document).ready(function() {
     hidePrice();
-    // $('#carouselReviews .carousel-item').matchHeight();
-    // $('.price__item').matchHeight();
     $('.btn--flowing-scroll').on('click', flowingScroll);
-    $(".request__form").submit(formRequest);
-    $(".request__form-field").blur(formValidationOnBlur);
+    $("#freeLectures").submit(formRequest);
+    $("#freeLectures .request__form-field").blur(formValidationOnBlur);
     $('.nav-link').on('click', scrollToNavItem);
-    $(".carousel").on("touchstart", function (event) {
+    $(".carousel").on("touchstart", function(event) {
         var xClick = event.originalEvent.touches[0].pageX;
-        $(this).one("touchmove", function (event) {
+        $(this).one("touchmove", function(event) {
             var xMove = event.originalEvent.touches[0].pageX;
             if (Math.floor(xClick - xMove) > 5) {
                 $(this).carousel('next');
@@ -16,13 +14,13 @@ $(document).ready(function () {
                 $(this).carousel('prev');
             }
         });
-        $(".carousel").on("touchend", function () {
+        $(".carousel").on("touchend", function() {
             $(this).off("touchmove");
         });
     });
 });
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     const $header = $('.header'),
         scroll = $(window).scrollTop();
 
@@ -30,7 +28,7 @@ $(window).scroll(function () {
     checkBlock();
 });
 
-$(window).on('resize', function () {
+$(window).on('resize', function() {
     // $(function () {
     //     $('#carouselReviews .carousel-item').matchHeight();
     // });
@@ -40,11 +38,12 @@ $(window).on('resize', function () {
 });
 
 function hidePrice() {
-    $.get("https://freegeoip.app/json/", function (response) {
+    $.get("https://freegeoip.app/json/", function(response) {
         if (response.country_code === 'BY') {
             $('.priceUa').remove();
             $('.priceBy').removeClass('d-none');
-        } if (response.country_code === 'UA') {
+        }
+        if (response.country_code === 'UA') {
             $('.priceBy').remove();
             $('.priceUa').removeClass('d-none');
         }
@@ -68,7 +67,7 @@ function formValidationOnBlur() {
 }
 
 function formValidationOnSubmit(e) {
-    $(e.target).find('.request__form-field').each(function () {
+    $(e.target).find('.request__form-field').each(function() {
         if ($(this).val().length === 0) {
             $(this).closest('.request__form-validation').addClass('invalid');
         }
@@ -102,11 +101,11 @@ function formRequest(e) {
             parse_mode: 'HTML',
             text: message
         },
-        success: function () {
-            window.location.href = "https://school.codegirl.ru/public/course/fd13a49c-d7c6-4e21-a268-529d01fae528";
+        success: function() {
+            window.location.href = "https://school.codegirl.ru/public/course/6693d9ae-1c39-4874-9ead-6bf8f4436487";
 
         },
-        error: function (e) {
+        error: function(e) {
             // $errorMessage.removeClass('d-none');
         }
     });
@@ -125,7 +124,7 @@ function scrollToNavItem(e) {
 
 function carouselEvent(e) {
     var xClick = event.originalEvent.touches[0].pageX;
-    $(this).one("touchmove", function (event) {
+    $(this).one("touchmove", function(event) {
         var xMove = event.originalEvent.touches[0].pageX;
         if (Math.floor(xClick - xMove) > 5) {
             $(this).carousel('next');
@@ -133,7 +132,7 @@ function carouselEvent(e) {
             $(this).carousel('prev');
         }
     });
-    $(".carousel").on("touchend", function () {
+    $(".carousel").on("touchend", function() {
         $(this).off("touchmove");
     });
 }
@@ -141,13 +140,13 @@ function carouselEvent(e) {
 function checkBlock() {
     const $header = $('.header'),
         navItems = $('.nav-link'),
-        scrollItems = navItems.map(function () {
+        scrollItems = navItems.map(function() {
             let item = $($(this).attr('href'));
             if (item.length) { return item; }
         });
     let lastId,
         fromTop = $(this).scrollTop() + $header.height() + 70,
-        cur = scrollItems.map(function () {
+        cur = scrollItems.map(function() {
             if ($(this).offset().top < fromTop)
                 return this;
         });

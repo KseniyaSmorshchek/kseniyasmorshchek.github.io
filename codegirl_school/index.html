@@ -1,893 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Codegirl School | IT-школа для девушек</title>
-    <meta name="description"
-          content="Онлайн-школа для девушек по созданию веб-сайтов с использованием HTML, CSS и JavaScript" />
-    <meta property="og:title" content="Codegirl School - IT-школа для девушек">
-    <meta property="og:description"
-          content="Уникальный онлайн-курс по созданию веб-сайтов, разработанный специально для девушек">
-    <meta property="og:url" content="https://codegirl.ru/">
-    <meta property="og:image" content="https://codegirl.ru/assets/img/banner.jpg">
-    <meta property="og:site-name" content="Codegirl School">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./scss/style.css">
-    <script src="./js/jquery.min.js" type="text/javascript"></script>
-    <script src="./js/popper.min.js" type="text/javascript"></script>
-    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./js/jquery.matchHeight.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/2dad5edf0c.js" crossorigin="anonymous"></script>
-    <script src="./js/index.js" type="text/javascript"></script>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '251333596483975');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-             src="https://www.facebook.com/tr?id=251333596483975&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
-</head>
 
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="header__logo logo">
-                    <img class="logo__img" src="./assets/img/logo.png" alt="Codegirl School">
-                </div>
-                <nav class="header__navigation d-none d-xl-flex justify-content-end">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#about">О курсе</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#process">Процесс обучения</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#programm">Программа курса</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#after">Что после?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#faq">Вопросы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#price">Стоимость</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">Отзывы</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="justify-content-end header__button">
-                    <a class="btn btn-primary btn--flowing-scroll" href="#request" role="button">Попробовать
-                        бесплатно</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="banner" id="about">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Codegirl School | IT-школа для девушек</title>
+        <meta name="description" content="Онлайн-школа для девушек по созданию веб-сайтов с использованием HTML, CSS и JavaScript" />
+        <meta property="og:title" content="Codegirl School - IT-школа для девушек">
+        <meta property="og:description" content="Уникальный онлайн-курс по созданию веб-сайтов, разработанный специально для девушек">
+        <meta property="og:url" content="https://codegirl.ru/">
+        <meta property="og:image" content="https://codegirl.ru/assets/img/banner.jpg">
+        <meta property="og:site-name" content="Codegirl School">
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/jquery.min.js" type="text/javascript"></script>
+        <script src="./js/popper.min.js" type="text/javascript"></script>
+        <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="./js/jquery.matchHeight.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/2dad5edf0c.js" crossorigin="anonymous"></script>
+        <script src="./js/index.js" type="text/javascript"></script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            ! function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '251333596483975');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=251333596483975&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+
+    <body>
+        <header class="header">
             <div class="container">
-                <div class="banner__info row">
-                    <div class="col-lg-6">
-                        <h1 class="banner__info-title mb-3">Онлайн-школа для девушек. <br>Web-разработка.</h1>
-                        <p class="banner__info-description mb-3 mb-lg-5">Уникальный онлайн-курс, разработанный
-                            специально для
-                            девушек по созданию веб-сайтов с использованием HTML и CSS.</p>
-                        <!-- <p class="banner__info-start mb-3 mb-lg-5">15 ноября - 14 марта</p> -->
+                <div class="row justify-content-between align-items-center">
+                    <div class="header__logo logo">
+                        <img class="logo__img" src="./assets/img/logo.png" alt="Codegirl School">
+                    </div>
+                    <nav class="header__navigation d-none d-xl-flex justify-content-end">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#about">О курсе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#process">Процесс обучения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#programm">Программа курса</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#after">Что после?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">Вопросы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#price">Стоимость</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="justify-content-end header__button">
                         <a class="btn btn-primary btn--flowing-scroll" href="#request" role="button">Попробовать
-                            бесплатно</a>
+                        бесплатно</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="audience container">
-            <div class="row">
-                <div class="audience__item col-xl-4">
-                    <span class="audience__item-num">&lt;/1&gt</span>
-                    <h3 class="audience__item-title">Для тех, кто хочет сменить профессию</h3>
-                    <p class="audience__item-description">Уйти с нелюбимой работы и получить перспективную специальность
-                        в современной и высокооплачиваемой сфере</p>
+        </header>
+        <main class="main">
+            <section class="banner" id="about">
+                <div class="container">
+                    <div class="banner__info row">
+                        <div class="col-lg-6">
+                            <h1 class="banner__info-title mb-3">Онлайн-школа для девушек. <br>Web-разработка.</h1>
+                            <p class="banner__info-description">Уникальный онлайн-курс, разработанный специально для девушек по созданию веб-сайтов с использованием HTML и CSS.</p>
+                            <p class="banner__info-start mb-3 mb-lg-4">22 ноября - 28 марта 2022г.</p>
+                            <a class="btn btn-primary btn--flowing-scroll" href="#price" role="button">Записаться на
+                            курс</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="audience__item col-xl-4">
-                    <span class="audience__item-num">&lt;/2&gt</span>
-                    <h3 class="audience__item-title">Для тех, кто мечтает работать удаленно</h3>
-                    <p class="audience__item-description">Совмещать работу с путешествиями или зарабатывать на фрилансе,
-                        находясь в декрете по уходу за ребёнком</p>
+            </section>
+            <section class="audience container">
+                <div class="row">
+                    <div class="audience__item col-xl-4">
+                        <span class="audience__item-num">&lt;/1&gt</span>
+                        <h3 class="audience__item-title">Для тех, кто хочет сменить профессию</h3>
+                        <p class="audience__item-description">Уйти с нелюбимой работы и получить перспективную специальность в современной и высокооплачиваемой сфере</p>
+                    </div>
+                    <div class="audience__item col-xl-4">
+                        <span class="audience__item-num">&lt;/2&gt</span>
+                        <h3 class="audience__item-title">Для тех, кто мечтает работать удаленно</h3>
+                        <p class="audience__item-description">Совмещать работу с путешествиями или зарабатывать на фрилансе, находясь в декрете по уходу за ребёнком</p>
+                    </div>
+                    <div class="audience__item col-xl-4">
+                        <span class="audience__item-num">&lt;/3&gt</span>
+                        <h3 class="audience__item-title">Для тех, кто хочет научиться создавать сайты для себя</h3>
+                        <p class="audience__item-description">Использовать умение разработки в своей работе или воплотить в жизнь идею собственного веб-проекта и запустить бизнес</p>
+                    </div>
                 </div>
-                <div class="audience__item col-xl-4">
-                    <span class="audience__item-num">&lt;/3&gt</span>
-                    <h3 class="audience__item-title">Для тех, кто хочет научиться создавать сайты для себя</h3>
-                    <p class="audience__item-description">Использовать умение разработки в своей работе или воплотить в
-                        жизнь идею собственного веб-проекта и запустить бизнес</p>
-                </div>
-            </div>
-        </section>
-        <section class="process container" id="process">
-            <div class="process__wrapper row justify-content-between">
-                <h2 class="process__title align-self-center mb-5">Как проходит обучение на курсе</h2>
-                <div class="process__item process__item--no-border">
-                    <p class="process__item-description">
-                        После зачисления на курс ты попадаешь в Telegram-чат* с твоими
-                        однокурсницами и наставниками школы.<br> За группой закрепляется опытный ментор, который будет
-                        контролировать процесс обучения и поддерживать студенток на протяжении всего курса
-                </div>
-                <div class="process__item">
-                    <span class="process__item-num">Шаг &lt;/1&gt</span>
-                    <h3 class="process__item-title">Просмотр видеолекций</h3>
-                    <p class="process__item-description">После старта обучения раз в неделю тебе открывается доступ на
-                        раздел с
-                        видеолекциями, материал которых ты изучаешь в удобное тебе время
-                    </p>
-                </div>
-                <div class="process__item process__item--logo">
-                    <span class="process__item-num">Шаг &lt;/2&gt</span>
-                    <h3 class="process__item-title">Практические задания и зачеты</h3>
-                    <p class="process__item-description">Полученные в результате просмотра лекций знания закрепляются
-                        практическими заданиями, включающими в себя тесты и тренажеры, а каждый раздел закрепляется
-                        зачетом, состоящим из тестирования и работы над макетами
-                    </p>
-                </div>
-                <div class="process__item">
-                    <span class="process__item-num">Шаг &lt;/3&gt</span>
-                    <h3 class="process__item-title">Проверка домашнего задания ментором</h3>
-                    <p class="process__item-description">Наставник проверяет выполненное тобой задание и отправляет тебе
-                        отчет с правками, которые необходимо откорректировать до выполнения следующего задания</p>
-                </div>
-                <div class="process__item">
-                    <span class="process__item-num">Шаг &lt;/4&gt</span>
-                    <h3 class="process__item-title">Консультация с ментором</h3>
-                    <p class="process__item-description">По возникшим в процессе обучения
-                        вопросам ты всегда можешь проконсультироваться в Telegram-чате с менторами, которые с радостью
-                        помогут разобраться тебе с любыми сложностями</p>
-                </div>
-                <div class="process__item process__item--no-border">
-                    <p class="process__item-description">
-                        Просмотр видеолекций, а также выполнение практических заданий под руководством ментора проходит
-                        циклично и подразумевает охват 13 тем курса</p>
-                </div>
-                <div class="process__item">
-                    <span class="process__item-num">Шаг &lt;/5&gt</span>
-                    <h3 class="process__item-title">Промежуточный экзамен</h3>
-                    <p class="process__item-description">После изучения 9 разделов курса проводится промежуточный
-                        экзамен, который состоит из теоретической и практической частей и длится 2 недели
-                    </p>
-                </div>
-                <div class="process__item">
-                    <span class="process__item-num">Шаг &lt;/6&gt</span>
-                    <h3 class="process__item-title">Аттестация</h3>
-                    <p class="process__item-description">К концу обучения проходит аттестация, которая охватывает все 13
-                        разделов курса и также, как и промежуточный экзамен, включает в себя теоретическую и
-                        практическую часть и длится 2 недели
-                    </p>
-                </div>
-                <!-- <div class="process__item">
+            </section>
+            <section class="process container" id="process">
+                <div class="process__wrapper row justify-content-between">
+                    <h2 class="process__title align-self-center mb-5">Как проходит обучение на курсе</h2>
+                    <div class="process__item process__item--no-border">
+                        <p class="process__item-description">
+                            После зачисления на курс ты попадаешь в Telegram-чат* с твоими однокурсницами и наставниками школы.<br> За группой закрепляется опытный ментор, который будет контролировать процесс обучения и поддерживать студенток на протяжении
+                            всего курса
+                    </div>
+                    <div class="process__item">
+                        <span class="process__item-num">Шаг &lt;/1&gt</span>
+                        <h3 class="process__item-title">Просмотр видеолекций</h3>
+                        <p class="process__item-description">После старта обучения раз в неделю тебе открывается доступ на раздел с видеолекциями, материал которых ты изучаешь в удобное тебе время
+                        </p>
+                    </div>
+                    <div class="process__item process__item--logo">
+                        <span class="process__item-num">Шаг &lt;/2&gt</span>
+                        <h3 class="process__item-title">Практические задания и зачеты</h3>
+                        <p class="process__item-description">Полученные в результате просмотра лекций знания закрепляются практическими заданиями, включающими в себя тесты и тренажеры, а каждый раздел закрепляется зачетом, состоящим из тестирования и работы над макетами
+                        </p>
+                    </div>
+                    <div class="process__item">
+                        <span class="process__item-num">Шаг &lt;/3&gt</span>
+                        <h3 class="process__item-title">Проверка домашнего задания ментором</h3>
+                        <p class="process__item-description">Наставник проверяет выполненное тобой задание и отправляет тебе отчет с правками, которые необходимо откорректировать до выполнения следующего задания</p>
+                    </div>
+                    <div class="process__item">
+                        <span class="process__item-num">Шаг &lt;/4&gt</span>
+                        <h3 class="process__item-title">Консультация с ментором</h3>
+                        <p class="process__item-description">По возникшим в процессе обучения вопросам ты всегда можешь проконсультироваться в Telegram-чате с менторами, которые с радостью помогут разобраться тебе с любыми сложностями</p>
+                    </div>
+                    <div class="process__item process__item--no-border">
+                        <p class="process__item-description">
+                            Просмотр видеолекций, а также выполнение практических заданий под руководством ментора проходит циклично и подразумевает охват 13 тем курса</p>
+                    </div>
+                    <div class="process__item">
+                        <span class="process__item-num">Шаг &lt;/5&gt</span>
+                        <h3 class="process__item-title">Промежуточный экзамен</h3>
+                        <p class="process__item-description">После изучения 9 разделов курса проводится промежуточный экзамен, который состоит из теоретической и практической частей и длится 2 недели
+                        </p>
+                    </div>
+                    <div class="process__item">
+                        <span class="process__item-num">Шаг &lt;/6&gt</span>
+                        <h3 class="process__item-title">Аттестация</h3>
+                        <p class="process__item-description">К концу обучения проходит аттестация, которая охватывает все 13 разделов курса и также, как и промежуточный экзамен, включает в себя теоретическую и практическую часть и длится 2 недели
+                        </p>
+                    </div>
+                    <!-- <div class="process__item">
                     <span class="process__item-num">Шаг &lt;/8&gt</span>
                     <h3 class="process__item-title">Пробное интервью</h3>
                     <p class="process__item-description">С тобой проводят пробное интервью, где обсуждаются наиболее
                         популярные вопросы на собеседованиях в IT-компании, «скользкие» моменты и критерии отбора</p>
                 </div> -->
-            </div>
-        </section>
-        <section class="programm" id="programm">
-            <div class="container">
-                <div class="row">
-                    <h2 class="col-12 programm__title mb-3">Программа курса</h2>
-                    <div class="accordion col-12" id="programm-accordion">
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading1" data-toggle="collapse"
-                                 data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                <h3 class="mb-0">Раздел 1. Введение</h3>
-                            </div>
+                </div>
+            </section>
+            <section class="programm" id="programm">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="col-12 programm__title mb-3">Программа курса</h2>
+                        <div class="accordion col-12" id="programm-accordion">
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    <h3 class="mb-0">Раздел 1. Введение</h3>
+                                </div>
 
-                            <div id="collapse1" class="collapse" aria-labelledby="heading1"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>О сайтах: из чего они состоят и кто их разрабатывает</li>
-                                        <li>Создаем первую веб-страницу</li>
-                                        <li>Знакомимся с редактором кода</li>
-                                        <li>Исследуем браузер</li>
-                                    </ul>
+                                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>О сайтах: из чего они состоят и кто их разрабатывает</li>
+                                            <li>Создаем первую веб-страницу</li>
+                                            <li>Знакомимся с редактором кода</li>
+                                            <li>Исследуем браузер</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading2" data-toggle="collapse"
-                                 data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                <h3 class="mb-0">Раздел 2. Введение в HTML</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <h3 class="mb-0">Раздел 2. Введение в HTML</h3>
+                                </div>
 
-                            <div id="collapse2" class="collapse" aria-labelledby="heading2"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Знакомимся с синтаксисом языка HTML</li>
-                                        <li>Изучаем структуру HTML-страницы</li>
-                                        <li>Учимся оформлять текст</li>
-                                        <li>Создаём ссылки и изображения</li>
-                                        <li>Что такое валидность и семантика?</li>
-                                    </ul>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Знакомимся с синтаксисом языка HTML</li>
+                                            <li>Изучаем структуру HTML-страницы</li>
+                                            <li>Учимся оформлять текст</li>
+                                            <li>Создаём ссылки и изображения</li>
+                                            <li>Что такое валидность и семантика?</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading3" data-toggle="collapse"
-                                 data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                <h3 class="mb-0">Раздел 3. Введение в CSS</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <h3 class="mb-0">Раздел 3. Введение в CSS</h3>
+                                </div>
 
-                            <div id="collapse3" class="collapse" aria-labelledby="heading3"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Знакомимся с синтаксисом языка CSS</li>
-                                        <li>Учимся создавать селекторы</li>
-                                        <li>Что такое наследование и каскадирование?</li>
-                                        <li>Учимся стилизовать текст</li>
-                                        <li>Как создавать фоны и рамки</li>
-                                        <li>Изучаем единицы измерения CSS</li>
-                                    </ul>
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Знакомимся с синтаксисом языка CSS</li>
+                                            <li>Учимся создавать селекторы</li>
+                                            <li>Что такое наследование и каскадирование?</li>
+                                            <li>Учимся стилизовать текст</li>
+                                            <li>Как создавать фоны и рамки</li>
+                                            <li>Изучаем единицы измерения CSS</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading4" data-toggle="collapse"
-                                 data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                <h3 class="mb-0">Раздел 4. Графические редакторы</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <h3 class="mb-0">Раздел 4. Графические редакторы</h3>
+                                </div>
 
-                            <div id="collapse4" class="collapse" aria-labelledby="heading4"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Знакомимся с графическими редакторами</li>
-                                        <li>Учимся работать с Figma</li>
-                                        <li>Экспортируем необходимые параметры и графику</li>
-                                    </ul>
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Знакомимся с графическими редакторами</li>
+                                            <li>Учимся работать с Figma</li>
+                                            <li>Экспортируем необходимые параметры и графику</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading10" data-toggle="collapse"
-                                 data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                <h3 class="mb-0">Раздел 5. Формы, таблицы и медиа</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading10" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    <h3 class="mb-0">Раздел 5. Формы, таблицы и медиа</h3>
+                                </div>
 
-                            <div id="collapse10" class="collapse" aria-labelledby="heading10"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Создаём первую таблицу</li>
-                                        <li>Создаём первую форму</li>
-                                        <li>Создаём видео- и аудио-элементы</li>
-                                    </ul>
+                                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Создаём первую таблицу</li>
+                                            <li>Создаём первую форму</li>
+                                            <li>Создаём видео- и аудио-элементы</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading5" data-toggle="collapse"
-                                 data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                <h3 class="mb-0">Раздел 6. Боксовая модель элемента</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <h3 class="mb-0">Раздел 6. Боксовая модель элемента</h3>
+                                </div>
 
-                            <div id="collapse5" class="collapse" aria-labelledby="heading5"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Учимся задавать параметры размеров и отступов</li>
-                                        <li>Блочные, строчные и строчно-блочные элементы</li>
-                                        <li>Понятие боксовой модели и свойство box-sizing</li>
-                                    </ul>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Учимся задавать параметры размеров и отступов</li>
+                                            <li>Блочные, строчные и строчно-блочные элементы</li>
+                                            <li>Понятие боксовой модели и свойство box-sizing</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading6" data-toggle="collapse"
-                                 data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                <h3 class="mb-0">Раздел 7. Продвинутый CSS</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    <h3 class="mb-0">Раздел 7. Продвинутый CSS</h3>
+                                </div>
 
-                            <div id="collapse6" class="collapse" aria-labelledby="heading6"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Селекторы: продвинутый уровень</li>
-                                        <li>Понятия псевдокласса</li>
-                                        <li>Понятие псевдоэлемента</li>
-                                        <li>Приоритеты селекторов</li>
-                                    </ul>
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Селекторы: продвинутый уровень</li>
+                                            <li>Понятия псевдокласса</li>
+                                            <li>Понятие псевдоэлемента</li>
+                                            <li>Приоритеты селекторов</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading7" data-toggle="collapse"
-                                 data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                <h3 class="mb-0">Раздел 8. Позиционирование и декорирование</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    <h3 class="mb-0">Раздел 8. Позиционирование и декорирование</h3>
+                                </div>
 
-                            <div id="collapse7" class="collapse" aria-labelledby="heading7"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Позиционирование элементов</li>
-                                        <li>Учимся создавать иконки</li>
-                                        <li>Трансформирование элементов</li>
-                                        <li>Переполнение контента</li>
-                                        <li>Плавные CSS-переходы</li>
-                                    </ul>
+                                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Позиционирование элементов</li>
+                                            <li>Учимся создавать иконки</li>
+                                            <li>Трансформирование элементов</li>
+                                            <li>Переполнение контента</li>
+                                            <li>Плавные CSS-переходы</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading8" data-toggle="collapse"
-                                 data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                <h3 class="mb-0">Раздел 9. Адаптивная верстка</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading8" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    <h3 class="mb-0">Раздел 9. Адаптивная верстка</h3>
+                                </div>
 
-                            <div id="collapse8" class="collapse" aria-labelledby="heading8"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Инструменты для создания адаптивной верстки</li>
-                                        <li>Создаем резиновую верстку</li>
-                                        <li>Применяем медиа-запросы</li>
-                                    </ul>
+                                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Инструменты для создания адаптивной верстки</li>
+                                            <li>Создаем резиновую верстку</li>
+                                            <li>Применяем медиа-запросы</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading9" data-toggle="collapse"
-                                 data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                <h3 class="mb-0">Раздел 10. Сетки. Flexbox</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading9" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                    <h3 class="mb-0">Раздел 10. Сетки. Flexbox</h3>
+                                </div>
 
-                            <div id="collapse9" class="collapse" aria-labelledby="heading9"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Что такое технология Flexbox?</li>
-                                        <li>Знакомство с Flexbox</li>
-                                        <li>Флекс-контейнеры, флекс-элементы и оси</li>
-                                        <li>Флексбокс для построения сетки</li>
-                                    </ul>
+                                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Что такое технология Flexbox?</li>
+                                            <li>Знакомство с Flexbox</li>
+                                            <li>Флекс-контейнеры, флекс-элементы и оси</li>
+                                            <li>Флексбокс для построения сетки</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading11" data-toggle="collapse"
-                                 data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                <h3 class="mb-0">Раздел 11. Методологии верстки</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading11" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    <h3 class="mb-0">Раздел 11. Методологии верстки</h3>
+                                </div>
 
-                            <div id="collapse11" class="collapse" aria-labelledby="heading11"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Зачем соблюдать методологию верстки?</li>
-                                        <li>Методология БЭМ</li>
-                                        <li>Наименование элементов в БЭМ</li>
-                                        <li>Ошибки и узкие места</li>
-                                    </ul>
+                                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Зачем соблюдать методологию верстки?</li>
+                                            <li>Методология БЭМ</li>
+                                            <li>Наименование элементов в БЭМ</li>
+                                            <li>Ошибки и узкие места</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading12" data-toggle="collapse"
-                                 data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                <h3 class="mb-0">Раздел 12. Препроцессоры</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading12" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                    <h3 class="mb-0">Раздел 12. Препроцессоры</h3>
+                                </div>
 
-                            <div id="collapse12" class="collapse" aria-labelledby="heading12"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Что такое препроцессор?</li>
-                                        <li>Возможности Sass</li>
-                                        <li>Организация кода</li>
-                                        <li>Настройка окружения</li>
-                                    </ul>
+                                <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Что такое препроцессор?</li>
+                                            <li>Возможности Sass</li>
+                                            <li>Организация кода</li>
+                                            <li>Настройка окружения</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="heading13" data-toggle="collapse"
-                                 data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                <h3 class="mb-0">Раздел 13. Доступность в web</h3>
-                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="heading13" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                    <h3 class="mb-0">Раздел 13. Доступность в web</h3>
+                                </div>
 
-                            <div id="collapse13" class="collapse" aria-labelledby="heading13"
-                                 data-parent="#programm-accordion">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Что такое доступность и зачем она нужна?</li>
-                                        <li>Инспекторы доступности и скринридеры</li>
-                                        <li>Знакомство с ARIA-атрибутами</li>
-                                        <li>Приемы для создания доступной верстки</li>
-                                    </ul>
+                                <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#programm-accordion">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Что такое доступность и зачем она нужна?</li>
+                                            <li>Инспекторы доступности и скринридеры</li>
+                                            <li>Знакомство с ARIA-атрибутами</li>
+                                            <li>Приемы для создания доступной верстки</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="video">
-            <div class="container">
-                <div class="row justify-content-lg-end justify-content-center">
-                    <div class="video__item text-center text-lg-left">
-                        <span class="video__item-label">&lt;Видео&gt</span>
-                        <h3 class="video__item-title">Приглашение на курс</h3>
-                        <div class="video__item-player">
-                            <iframe src="https://www.youtube.com/embed/Px8fDj7XtBk?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white"
-                                    width="100%" height="100%" frameborder="0"></iframe>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <div class="row justify-content-lg-end justify-content-center">
+                        <div class="video__item text-center text-lg-left">
+                            <span class="video__item-label">&lt;Видео&gt</span>
+                            <h3 class="video__item-title">Приглашение на курс</h3>
+                            <div class="video__item-player">
+                                <iframe src="https://www.youtube.com/embed/Px8fDj7XtBk?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white" width="100%" height="100%" frameborder="0"></iframe>
+                            </div>
+                            <span class="video__item-author mt-3">Ксения Бессчастнова</span>
+                            <p class="video__item-description">Автор курса и основатель онлайн-школы <br> &lt;Codegirl School&gt
+                            </p>
                         </div>
-                        <span class="video__item-author mt-3">Ксения Бессчастнова</span>
-                        <p class="video__item-description">Автор курса и основатель онлайн-школы <br> &lt;Codegirl
-                            School&gt
+                    </div>
+                </div>
+            </section>
+            <section class="benefits container" id="after">
+                <div class="row">
+                    <h3 class="benefits__title col-12 mb-5">После окончания курса ты получишь:</h3>
+                    <div class="benefits__item col-xl-4 mb-4 mb-xl-0">
+                        <p class="benefits__item-description">Структурированные знания о построении веб-сайтов и умение самостоятельно и грамотно их создавать</p>
+                    </div>
+                    <div class="benefits__item col-xl-4 mb-4 mb-xl-0">
+                        <p class="benefits__item-description">Опыт работы с дедлайнами в условиях близких к реальным условиям разработки в IT-компаниях
+                        </p>
+                    </div>
+                    <div class="benefits__item col-xl-4">
+                        <p class="benefits__item-description">Умение уверенно работать с самыми актуальными на сегодняшний день инструментами для разработки
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="benefits container" id="after">
-            <div class="row">
-                <h3 class="benefits__title col-12 mb-5">После окончания курса ты получишь:</h3>
-                <div class="benefits__item col-xl-4 mb-4 mb-xl-0">
-                    <p class="benefits__item-description">Структурированные знания о построении веб-сайтов и умение
-                        самостоятельно и грамотно их создавать</p>
-                </div>
-                <div class="benefits__item col-xl-4 mb-4 mb-xl-0">
-                    <p class="benefits__item-description">Опыт работы с дедлайнами в условиях близких к реальным
-                        условиям разработки в IT-компаниях
-                    </p>
-                </div>
-                <div class="benefits__item col-xl-4">
-                    <p class="benefits__item-description">Умение уверенно работать с самыми актуальными на сегодняшний
-                        день инструментами для разработки
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="price container" id="price">
-            <h2 class="mb-5">Варианты обучения</h2>
-            <div class="row justify-content-between">
-                <div class="col-xl-4 mb-5 mb-xl-0">
-                    <div class="price__item" data-mh="my-group">
-                        <span class="price__item-label">&lt;LITE&gt</span>
-                        <span class="price__item-info">
+            </section>
+            <section class="price container" id="price">
+                <h2 class="mb-5">Варианты обучения</h2>
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 mb-5 mb-xl-0">
+                        <div class="price__item" data-mh="my-group">
+                            <span class="price__item-label">&lt;LITE&gt</span>
+                            <span class="price__item-info">
                             <span class="d-block">
                                 <span style="font-size: 3.5rem;">14 500</span> <i class="fas fa-ruble-sign"></i>
                             </span>
                             <span class="price__item-info-description priceBy d-none"><sub>~</sub>
                                 499 BYN</span>
                             <span class="price__item-info-description priceUa d-none"><sub>~</sub> 5 400 UAH</span>
-                        </span>
-                        <ul class="price__item-list">
-                            <li>Самостоятельное обучение без поддержки наставника</li>
-                            <li>Увлекательные тренажеры, теоретические тесты и проекты по макетам от нашего дизайнера
-                            </li>
-                            <li>Бессрочный доступ ко всему контенту</li>
-                        </ul>
-                        <div class="price__buttons text-center mt-5">
-                            <a class="btn btn-primary btn--flowing-scroll" href="#request">Попробовать
-                                бесплатно</a>
+                            </span>
+                            <ul class="price__item-list">
+                                <li>Самостоятельное обучение без поддержки наставника</li>
+                                <li>Увлекательные тренажеры, теоретические тесты и проекты по макетам от нашего дизайнера
+                                </li>
+                                <li>Бессрочный доступ ко всему контенту</li>
+                            </ul>
+                            <div class="price__buttons text-center mt-5">
+                                <a class="btn btn-primary" href="https://school.codegirl.ru/public/course/49895379-890a-41ae-93ad-67aaa188ae7b" target="_blank">Записаться
+                                на курс</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 px-xl-2 mb-5 mb-xl-0">
-                    <div class="price__item" data-mh="my-group">
-                        <span class="price__item-label">&lt;STANDARD&gt</span>
-                        <span class="price__item-info">
+                    <div class="col-xl-4 px-xl-2 mb-5 mb-xl-0">
+                        <div class="price__item" data-mh="my-group">
+                            <span class="price__item-label">&lt;STANDARD&gt</span>
+                            <span class="price__item-info">
                             <span class="d-block">
                                 от&nbsp; <span style="font-size: 3.5rem">34 500</span> <i class="fas fa-ruble-sign"></i>
                             </span>
                             <span class="price__item-info-description priceBy d-none"><sub>~</sub> 1 180 BYN</span>
                             <span class="price__item-info-description priceUa d-none"><sub>~</sub> 12 550 UAH</span>
-                        </span>
-                        <ul class="price__item-list">
-                            <li>Потоковое обучение продолжительностью 4 месяца</li>
-                            <li>Постоянная поддержка наставником в Telegram</li>
-                            <li>Проверка домашних заданий, зачетов и экзаменов наставниками и отчет (отзыв) с
-                                правками по ним</li>
-                            <li>Выдача сертификата после аттестации</li>
-                            <li>Бессрочный доступ к контенту</li>
-                            <li class="price__item-list-item">Возможность оплаты в рассрочку на 3 месяца</li>
-                        </ul>
-                        <p class="price__item-date mt-5">Старт потока: ноябрь 2021г.</p>
-                        <div class="price__buttons text-center mt-5">
-                            <a class="btn btn-primary btn--flowing-scroll" href="#request">Попробовать бесплатно</a>
+                            </span>
+                            <ul class="price__item-list">
+                                <li>Потоковое обучение продолжительностью 4 месяца</li>
+                                <li>Постоянная поддержка наставником в Telegram</li>
+                                <li>Проверка домашних заданий, зачетов и экзаменов наставниками и отчет (отзыв) с правками по ним</li>
+                                <li>Выдача сертификата после аттестации</li>
+                                <li>Бессрочный доступ к контенту</li>
+                                <li class="price__item-list-item">Возможность оплаты в рассрочку на 3 месяца</li>
+                            </ul>
+                            <p class="price__item-date mt-5">Старт потока: 22 ноября</p>
+                            <div class="price__buttons text-center mt-5">
+                                <a class="btn btn-primary" href="https://school.codegirl.ru/public/course/fd13a49c-d7c6-4e21-a268-529d01fae528" target="_blank">Записаться
+                                на курс</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="price__item" data-mh="my-group">
-                        <span class="price__item-label">&lt;PREMIUM&gt</span>
-                        <span class="price__item-info">
+                    <div class="col-xl-4">
+                        <div class="price__item" data-mh="my-group">
+                            <span class="price__item-label">&lt;PREMIUM&gt</span>
+                            <span class="price__item-info">
                             <span class="d-block">
                                 от&nbsp; <span style="font-size: 3.5rem">69 500</span> <i class="fas fa-ruble-sign"></i>
                             </span>
                             <span class="price__item-info-description priceBy d-none"><sub>~</sub> 2 490 BYN</span>
                             <span class="price__item-info-description priceUa d-none"><sub>~</sub> 26 150 UAH</span>
-                        </span>
-                        <ul class="price__item-list">
-                            <li>Персональное обучение без привязки к потоку</li>
-                            <li>Еженедельные онлайн-встречи с наставником в Zoom</li>
-                            <li>Постоянная поддержка наставником в Telegram</li>
-                            <li>Проверка домашних заданий, зачетов и экзаменов личным наставником и отчет (отзыв) с
-                                правками по ним</li>
-                            <li>Выдача сертификата после аттестации</li>
-                            <li>Бессрочный доступ к контенту</li>
-                            <li class="price__item-list-item">Возможность оплаты в рассрочку на 3 месяца</li>
-                        </ul>
-                        <div class="price__buttons text-center mt-5">
-                            <a class="btn btn-primary btn--flowing-scroll" href="#request">Попробовать
-                                бесплатно</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="faq" id="faq">
-            <div class="container">
-                <div class="row">
-                    <h2 class="mb-3 col-12">Вопросы</h2>
-                    <div class="accordion col-12" id="faq-accordion">
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq1" data-toggle="collapse" data-target="#answer1"
-                                 aria-expanded="false" aria-controls="answer1">
-                                <h3 class="mb-0">Сколько времени длится обучение?
-                                </h3>
-                            </div>
-
-                            <div id="answer1" class="collapse" aria-labelledby="faq1" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Обучение по пакетам STANDARD и PREMIUM длится 4 месяца. По пакету LITE срок
-                                        обучения не ограничивается.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq9" data-toggle="collapse" data-target="#answer9"
-                                 aria-expanded="false" aria-controls="answer9">
-                                <h3 class="mb-0">Что требуется для того, чтобы поступить на курс?
-                                </h3>
-                            </div>
-
-                            <div id="answer9" class="collapse" aria-labelledby="faq9" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Курс разработан для новичков, поэтому от тебя требуется лишь уверенное владение
-                                        компьютером и базовые знания английского языка.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq2" data-toggle="collapse" data-target="#answer2"
-                                 aria-expanded="false" aria-controls="answer2">
-                                <h3 class="mb-0">Смогу ли осилить курс, если я гуманитарий?
-                                </h3>
-                            </div>
-
-                            <div id="answer2" class="collapse" aria-labelledby="faq2" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Изучение таких языков как HTML и CSS не требуют математических навыков более
-                                        серьёзных чем те, что преподавались в начальных классах школы. Каким бы складом
-                                        ума ты ни обладала, ты легко найдешь своё применение в web-разработке.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq3" data-toggle="collapse" data-target="#answer3"
-                                 aria-expanded="false" aria-controls="answer3">
-                                <h3 class="mb-0">Какие задания включает курс?</h3>
-                            </div>
-
-                            <div id="answer3" class="collapse" aria-labelledby="faq3" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Мы убеждены в том, что залог успеха в обучении любому языку программирования -
-                                        практика и еще раз практика!
-                                        Именно поэтому большую часть времени на курсе ты будешь уделять практическим
-                                        заданиям.
-                                        Помимо теоретических тестов, каждый раздел содержит в себе множество
-                                        практических тренажеров, а также работу над несколькими проектами.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq5" data-toggle="collapse" data-target="#answer5"
-                                 aria-expanded="false" aria-controls="answer5">
-                                <h3 class="mb-0"> Сколько времени у меня будет уходить на учебу?
-                                </h3>
-                            </div>
-
-                            <div id="answer5" class="collapse" aria-labelledby="faq5" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Курс подходит для работающих людей, что позволяет учиться в комфортном режиме. В
-                                        среднем для успешного прохождения курса тебе понадобится 2-3 часа в день (на
-                                        изучение лекций и выполнение домашних заданий).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq6" data-toggle="collapse" data-target="#answer6"
-                                 aria-expanded="false" aria-controls="answer6">
-                                <h3 class="mb-0">Как будет происходить общение с наставником?
-                                </h3>
-                            </div>
-
-                            <div id="answer6" class="collapse" aria-labelledby="faq6" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>При обучении по пакету STANDARD общение с наставником будет проходить как в общем
-                                        Telegram-чате группы, так и в личных сообщениях с ментором.<br>
-                                        При обучении по пакету PREMIUM общение с закрепленным наставником будет
-                                        проходить в личных сообщениях в Telegram и еженедельными онлайн-встречами в
-                                        Zoom.
-                                        При обучении по пакету LITE поддержка наставником не предусмотрена.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq7" data-toggle="collapse" data-target="#answer7"
-                                 aria-expanded="false" aria-controls="answer7">
-                                <h3 class="mb-0"> Что я получу после обучения?</h3>
-                            </div>
-
-                            <div id="answer7" class="collapse" aria-labelledby="faq7" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>После обучения ты получишь понимание полного цикла работы верстальщика и умение
-                                        самостоятельно разрабатывать web-сайты. Это позволит тебе начать карьеру
-                                        верстальщика сразу после окончания курсов в IT-компании или удалённо
-                                        в роли фрилансера.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq8" data-toggle="collapse" data-target="#answer8"
-                                 aria-expanded="false" aria-controls="answer8">
-                                <h3 class="mb-0"> Будет ли сертификат после окончания обучения?
-                                </h3>
-                            </div>
-
-                            <div id="answer8" class="collapse" aria-labelledby="faq8" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Да, после обучения по пакетам STANDARD или PREMIUM ты получишь электронный
-                                        сертификат об успешном окончании курса
-                                        школы
-                                        Codegirl School. После обучения по пакету LITE выдача сертифката не
-                                        предусмотрена.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq11" data-toggle="collapse" data-target="#answer11"
-                                 aria-expanded="false" aria-controls="answer11">
-                                <h3 class="mb-0">Возможно ли оплатить обучение в рассрочку?
-                                </h3>
-                            </div>
-
-                            <div id="answer11" class="collapse" aria-labelledby="faq11" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Да, для пакетов STANDARD и PREMIUM предусмотрена рассрочка оплаты на 3 месяца.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header collapsed" id="faq10" data-toggle="collapse" data-target="#answer10"
-                                 aria-expanded="false" aria-controls="answer10">
-                                <h3 class="mb-0">Как приобрести обучение в подарок?
-                                </h3>
-                            </div>
-
-                            <div id="answer10" class="collapse" aria-labelledby="faq10" data-parent="#faq-accordion">
-                                <div class="card-body">
-                                    <p>Для того, чтобы подарить обучение в школе близкому человеку, просто выбери
-                                        подходящий пакет обучения в списке досутпных и нажми кнопку "Купить в подарок".
-                                    </p>
-                                </div>
+                            </span>
+                            <ul class="price__item-list">
+                                <li>Персональное обучение без привязки к потоку</li>
+                                <li>Еженедельные онлайн-встречи с наставником в Zoom</li>
+                                <li>Постоянная поддержка наставником в Telegram</li>
+                                <li>Проверка домашних заданий, зачетов и экзаменов личным наставником и отчет (отзыв) с правками по ним</li>
+                                <li>Выдача сертификата после аттестации</li>
+                                <li>Бессрочный доступ к контенту</li>
+                                <li class="price__item-list-item">Возможность оплаты в рассрочку на 3 месяца</li>
+                            </ul>
+                            <div class="price__buttons text-center mt-5">
+                                <a class="btn btn-primary" href="https://school.codegirl.ru/public/course/a89d9b58-5a66-40ed-962f-57480cd31721" target="_blank">Записаться
+                                на курс</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
-        <section class="reviews container" id="reviews">
-            <div class="row">
-                <div id="carouselReviews" class="carousel slide col-12" data-interval="false">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselReviews" data-slide-to="1"></li>
-                        <li data-target="#carouselReviews" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="reviews__item carousel-item active" data-mh="my-group-2">
-                            <div class="row h-100">
-                                <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
-                                    <span class="reviews__item-label mb-4">&lt;Отзывы&gt</span>
-                                    <h3 class="reviews__item-title mb-3">Совмещать курсы с учебой в университете? Легко!
+                <div class="row price__free flex-column align-items-center mt-5">
+                    <h3 class="mb-3 text-center">Также предлагаем тебе пройти 5 бесплатных уроков!</h3>
+                    <p class="mb-2 text-center">В процессе изучения ты создашь свою первую веб-страничку, познакомишься с настоящим редактором кода и узнаешь:</p>
+                    <ul class="price__free-list mb-4">
+                        <li>как был создан интернет</li>
+                        <li>как устроены сайты изнутри</li>
+                        <li>что такое "сервер"</li>
+                        <li>что происходит, когда мы заходим на сайт</li>
+                        <li>отличие frontend- и backend-разработки</li>
+                    </ul>
+                    <a class="btn btn-primary btn--flowing-scroll" href="#request" role="button">Попробовать
+                    бесплатно</a>
+                </div>
+            </section>
+            <section class="faq" id="faq">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="mb-3 col-12">Вопросы</h2>
+                        <div class="accordion col-12" id="faq-accordion">
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq1" data-toggle="collapse" data-target="#answer1" aria-expanded="false" aria-controls="answer1">
+                                    <h3 class="mb-0">Сколько времени длится обучение?
                                     </h3>
-                                    <p class="reviews__item-description">Будучи студенткой 2-го курса, я решила пойти на
-                                        курсы frontend-разработки. И к концу обучения я попала в лабораторию крупной
-                                        белорусской IT-компании!</p>
-                                    <span class="reviews__item-author d-lg-none">&lt;Ульяна&gt, 19 лет</span>
                                 </div>
-                                <div
-                                     class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end justify-content-end justify-content-lg-center">
-                                    <div class="reviews__item-player">
-                                        <iframe src="https://www.youtube.com/embed/jc2_g5pdPlg?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white"
-                                                width="100%" height="100%" frameborder="0"></iframe>
+
+                                <div id="answer1" class="collapse" aria-labelledby="faq1" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Обучение по пакетам STANDARD и PREMIUM длится 4 месяца. По пакету LITE срок обучения не ограничивается.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row d-none d-lg-block">
-                                <div class="col-lg-6">
-                                    <span class="reviews__item-author">&lt;Ульяна&gt, 19 лет</span>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq9" data-toggle="collapse" data-target="#answer9" aria-expanded="false" aria-controls="answer9">
+                                    <h3 class="mb-0">Что требуется для того, чтобы поступить на курс?
+                                    </h3>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="reviews__item carousel-item" data-mh="my-group-2">
-                            <div class="row h-100">
-                                <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
-                                    <span class="reviews__item-label mb-4">&lt;Отзывы&gt</span>
-                                    <h3 class="reviews__item-title mb-3">Декрет не помеха саморазвитию</h3>
-                                    <p class="reviews__item-description">Я ушла в декрет и поняла, что на работу
-                                        возвращаться не хочу. И вот появилась возможность что-то поменять...</p>
-                                    <span class="reviews__item-author d-lg-none">&lt;Катя&gt, 31 год</span>
-                                </div>
-                                <div
-                                     class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end justify-content-end justify-content-lg-center">
-                                    <div class="reviews__item-player">
-                                        <iframe src="https://www.youtube.com/embed/kEuGRC59_Z8?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white"
-                                                width="100%" height="100%" frameborder="0"></iframe>
+
+                                <div id="answer9" class="collapse" aria-labelledby="faq9" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Курс разработан для новичков, поэтому от тебя требуется лишь уверенное владение компьютером и базовые знания английского языка.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row d-none d-lg-block">
-                                <div class="col-lg-6">
-                                    <span class="reviews__item-author">&lt;Катя&gt, 31 год</span>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq2" data-toggle="collapse" data-target="#answer2" aria-expanded="false" aria-controls="answer2">
+                                    <h3 class="mb-0">Смогу ли осилить курс, если я гуманитарий?
+                                    </h3>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="reviews__item carousel-item" data-mh="my-group-2">
-                            <div class="row h-100">
-                                <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
-                                    <span class="reviews__item-label mb-4">&lt;Отзывы&gt</span>
-                                    <h3 class="reviews__item-title mb-3">Никогда не поздно что-то поменять</h3>
-                                    <p class="reviews__item-description">Отучившись на экономиста, я поняла, что это не
-                                        моя специальность и мне с ней не по пути...</p>
-                                    <span class="reviews__item-author d-lg-none">&lt;Вика&gt, 28 лет</span>
-                                </div>
-                                <div
-                                     class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end justify-content-end justify-content-lg-center">
-                                    <div class="reviews__item-player">
-                                        <iframe src="https://www.youtube.com/embed/va3QYrwjrQw?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white"
-                                                width="100%" height="100%" frameborder="0"></iframe>
+
+                                <div id="answer2" class="collapse" aria-labelledby="faq2" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Изучение таких языков как HTML и CSS не требуют математических навыков более серьёзных чем те, что преподавались в начальных классах школы. Каким бы складом ума ты ни обладала, ты легко найдешь своё применение в
+                                            web-разработке.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row d-none d-lg-block">
-                                <div class="col-lg-6">
-                                    <span class="reviews__item-author">&lt;Вика&gt, 28 лет</span>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq3" data-toggle="collapse" data-target="#answer3" aria-expanded="false" aria-controls="answer3">
+                                    <h3 class="mb-0">Какие задания включает курс?</h3>
+                                </div>
+
+                                <div id="answer3" class="collapse" aria-labelledby="faq3" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Мы убеждены в том, что залог успеха в обучении любому языку программирования - практика и еще раз практика! Именно поэтому большую часть времени на курсе ты будешь уделять практическим заданиям. Помимо теоретических
+                                            тестов, каждый раздел содержит в себе множество практических тренажеров, а также работу над несколькими проектами.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq5" data-toggle="collapse" data-target="#answer5" aria-expanded="false" aria-controls="answer5">
+                                    <h3 class="mb-0"> Сколько времени у меня будет уходить на учебу?
+                                    </h3>
+                                </div>
+
+                                <div id="answer5" class="collapse" aria-labelledby="faq5" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Курс подходит для работающих людей, что позволяет учиться в комфортном режиме. В среднем для успешного прохождения курса тебе понадобится 2-3 часа в день (на изучение лекций и выполнение домашних заданий).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq6" data-toggle="collapse" data-target="#answer6" aria-expanded="false" aria-controls="answer6">
+                                    <h3 class="mb-0">Как будет происходить общение с наставником?
+                                    </h3>
+                                </div>
+
+                                <div id="answer6" class="collapse" aria-labelledby="faq6" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>При обучении по пакету STANDARD общение с наставником будет проходить как в общем Telegram-чате группы, так и в личных сообщениях с ментором.<br> При обучении по пакету PREMIUM общение с закрепленным наставником
+                                            будет проходить в личных сообщениях в Telegram и еженедельными онлайн-встречами в Zoom. При обучении по пакету LITE поддержка наставником не предусмотрена.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq7" data-toggle="collapse" data-target="#answer7" aria-expanded="false" aria-controls="answer7">
+                                    <h3 class="mb-0"> Что я получу после обучения?</h3>
+                                </div>
+
+                                <div id="answer7" class="collapse" aria-labelledby="faq7" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>После обучения ты получишь понимание полного цикла работы верстальщика и умение самостоятельно разрабатывать web-сайты. Это позволит тебе начать карьеру верстальщика сразу после окончания курсов в IT-компании или
+                                            удалённо в роли фрилансера.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq8" data-toggle="collapse" data-target="#answer8" aria-expanded="false" aria-controls="answer8">
+                                    <h3 class="mb-0"> Будет ли сертификат после окончания обучения?
+                                    </h3>
+                                </div>
+
+                                <div id="answer8" class="collapse" aria-labelledby="faq8" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Да, после обучения по пакетам STANDARD или PREMIUM ты получишь электронный сертификат об успешном окончании курса школы Codegirl School. После обучения по пакету LITE выдача сертифката не предусмотрена.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq11" data-toggle="collapse" data-target="#answer11" aria-expanded="false" aria-controls="answer11">
+                                    <h3 class="mb-0">Возможно ли оплатить обучение в рассрочку?
+                                    </h3>
+                                </div>
+
+                                <div id="answer11" class="collapse" aria-labelledby="faq11" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Да, для пакетов STANDARD и PREMIUM предусмотрена рассрочка оплаты на 3 месяца.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header collapsed" id="faq10" data-toggle="collapse" data-target="#answer10" aria-expanded="false" aria-controls="answer10">
+                                    <h3 class="mb-0">Как приобрести обучение в подарок?
+                                    </h3>
+                                </div>
+
+                                <div id="answer10" class="collapse" aria-labelledby="faq10" data-parent="#faq-accordion">
+                                    <div class="card-body">
+                                        <p>Для того, чтобы подарить обучение в школе близкому человеку, просто выбери подходящий пакет обучения в списке досутпных и нажми кнопку "Купить в подарок".
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous Slide</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next Slide</span>
-                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="request">
-            <div class="request__wrapper container" id="requestForm">
-                <div class="request__form-wrapper row text-center justify-content-center" id="request">
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <div>
-                            <h2 class="request__title mb-4">Начни обучение уже сегодня!</h2>
-                            <p class="request__description mb-5">Просто заполни анкету, переходи по ссылке и ныряй в
-                                закулисье
-                                web-разработки!</p>
+                </div>
+            </section>
+            <section class="reviews container" id="reviews">
+                <div class="row">
+                    <div id="carouselReviews" class="carousel slide col-12" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselReviews" data-slide-to="1"></li>
+                            <li data-target="#carouselReviews" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="reviews__item carousel-item active" data-mh="my-group-2">
+                                <div class="row h-100">
+                                    <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+                                        <span class="reviews__item-label mb-4">&lt;Отзывы&gt</span>
+                                        <h3 class="reviews__item-title mb-3">Совмещать курсы с учебой в университете? Легко!
+                                        </h3>
+                                        <p class="reviews__item-description">Будучи студенткой 2-го курса, я решила пойти на курсы frontend-разработки. И к концу обучения я попала в лабораторию крупной белорусской IT-компании!</p>
+                                        <span class="reviews__item-author d-lg-none">&lt;Ульяна&gt, 19 лет</span>
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end justify-content-end justify-content-lg-center">
+                                        <div class="reviews__item-player">
+                                            <iframe src="https://www.youtube.com/embed/jc2_g5pdPlg?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white" width="100%" height="100%" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row d-none d-lg-block">
+                                    <div class="col-lg-6">
+                                        <span class="reviews__item-author">&lt;Ульяна&gt, 19 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__item carousel-item" data-mh="my-group-2">
+                                <div class="row h-100">
+                                    <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+                                        <span class="reviews__item-label mb-4">&lt;Отзывы&gt</span>
+                                        <h3 class="reviews__item-title mb-3">Декрет не помеха саморазвитию</h3>
+                                        <p class="reviews__item-description">Я ушла в декрет и поняла, что на работу возвращаться не хочу. И вот появилась возможность что-то поменять...</p>
+                                        <span class="reviews__item-author d-lg-none">&lt;Катя&gt, 31 год</span>
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end justify-content-end justify-content-lg-center">
+                                        <div class="reviews__item-player">
+                                            <iframe src="https://www.youtube.com/embed/kEuGRC59_Z8?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white" width="100%" height="100%" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row d-none d-lg-block">
+                                    <div class="col-lg-6">
+                                        <span class="reviews__item-author">&lt;Катя&gt, 31 год</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__item carousel-item" data-mh="my-group-2">
+                                <div class="row h-100">
+                                    <div class="col-12 col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+                                        <span class="reviews__item-label mb-4">&lt;Отзывы&gt</span>
+                                        <h3 class="reviews__item-title mb-3">Никогда не поздно что-то поменять</h3>
+                                        <p class="reviews__item-description">Отучившись на экономиста, я поняла, что это не моя специальность и мне с ней не по пути...</p>
+                                        <span class="reviews__item-author d-lg-none">&lt;Вика&gt, 28 лет</span>
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-end justify-content-end justify-content-lg-center">
+                                        <div class="reviews__item-player">
+                                            <iframe src="https://www.youtube.com/embed/va3QYrwjrQw?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&fs=0&color=white" width="100%" height="100%" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row d-none d-lg-block">
+                                    <div class="col-lg-6">
+                                        <span class="reviews__item-author">&lt;Вика&gt, 28 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselReviews" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous Slide</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselReviews" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next Slide</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 pl-lg-4">
-                        <form class="request__form" action="">
-                            <div class="request__form-validation">
-                                <input type="text" name="name" id="name" placeholder="Ваше имя*"
-                                       class="request__form-field">
+                </div>
+            </section>
+            <section class="request">
+                <div class="request__wrapper container" id="requestForm">
+                    <div class="request__form-wrapper row text-center justify-content-center" id="request">
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div>
+                                <h2 class="request__title mb-4">Начни обучение уже сегодня!</h2>
+                                <p class="request__description mb-5">Просто заполни анкету, переходи по ссылке и ныряй в закулисье web-разработки!
+                                </p>
                             </div>
-                            <div class="request__form-validation">
-                                <input type="text" name="phone" id="phone" placeholder="Номер телефона*"
-                                       class="request__form-field">
-                            </div>
-                            <div class="request__form-validation">
-                                <input type="text" name="inst" id="inst" placeholder="Имя в Instagram*"
-                                       class="request__form-field">
-                            </div>
-                            <div class="request__form-validation">
-                                <input type="text" name="email" id="email" placeholder="Email*"
-                                       class="request__form-field">
-                            </div>
-                            <div class="request__form-radio">
-                                <p>Какой способ связи тебе более предпочителен?</p>
-                                <label for="contactChoice2" class="request__form-radio-container">
+                        </div>
+                        <div class="col-lg-6 pl-lg-4">
+                            <form class="request__form" action="" id="freeLectures">
+                                <div class="request__form-validation">
+                                    <input type="text" name="name" id="name" placeholder="Ваше имя*" class="request__form-field">
+                                </div>
+                                <div class="request__form-validation">
+                                    <input type="text" name="phone" id="phone" placeholder="Номер телефона*" class="request__form-field">
+                                </div>
+                                <div class="request__form-validation">
+                                    <input type="text" name="inst" id="inst" placeholder="Имя в Instagram*" class="request__form-field">
+                                </div>
+                                <div class="request__form-validation">
+                                    <input type="text" name="email" id="email" placeholder="Email*" class="request__form-field">
+                                </div>
+                                <div class="request__form-radio">
+                                    <p>Какой способ связи тебе более предпочителен?</p>
+                                    <label for="contactChoice2" class="request__form-radio-container">
                                     <input type="radio" id="contactChoice2" name="contact" value="instagram" checked>
                                     <span class="request__form-radio-icon"></span>
                                     <span class="request__form-radio-label">Instagram</span>
                                 </label>
-                                <label for="contactChoice3" class="request__form-radio-container">
+                                    <label for="contactChoice3" class="request__form-radio-container">
                                     <input type="radio" id="contactChoice3" name="contact" value="telegram">
                                     <span class="request__form-radio-icon"></span>
                                     <span class="request__form-radio-label">Telegram</span>
                                 </label>
-                                <label for="contactChoice4" class="request__form-radio-container">
+                                    <label for="contactChoice4" class="request__form-radio-container">
                                     <input type="radio" id="contactChoice4" name="contact" value="whatsapp">
                                     <span class="request__form-radio-icon"></span>
                                     <span class="request__form-radio-label">WhatsApp</span>
                                 </label>
-                                <label for="contactChoice5" class="request__form-radio-container">
+                                    <label for="contactChoice5" class="request__form-radio-container">
                                     <input type="radio" id="contactChoice5" name="contact" value="viber">
                                     <span class="request__form-radio-icon"></span>
                                     <span class="request__form-radio-label">Viber</span>
                                 </label>
-                                <label for="contactChoice1" class="request__form-radio-container">
+                                    <label for="contactChoice1" class="request__form-radio-container">
                                     <input type="radio" id="contactChoice1" name="contact" value="email">
                                     <span class="request__form-radio-icon"></span>
                                     <span class="request__form-radio-label">Email</span>
                                 </label>
-                            </div>
-                            <input type="submit" id="submit" class="btn btn-primary mt-4" value="Попробовать бесплатно">
-                        </form>
+                                </div>
+                                <input type="submit" id="submit" class="btn btn-primary mt-4" value="Попробовать бесплатно">
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="social">
-            <div class="container">
-                <div class="row flex-column align-items-center">
-                    <a href="https://www.instagram.com/codegirl_school/" class="social__icon mb-2"></a>
-                    <span class="social__label">Следи за нашими новостями в <a
+            </section>
+        </main>
+        <footer>
+            <section class="social">
+                <div class="container">
+                    <div class="row flex-column align-items-center">
+                        <a href="https://www.instagram.com/codegirl_school/" class="social__icon mb-2"></a>
+                        <span class="social__label">Следи за нашими новостями в <a
                            href="https://www.instagram.com/codegirl_school/">Instagram</a></span>
-                    <a href="mailto:school@codegirl.ru" class="d-block support-link"
-                       target="_blank">school@codegirl.ru</a>
-                    <div class="company__info mt-5 text-center">
-                        <span class="d-block">ООО "Кодгерл"</span>
-                        <span class="d-block">ОГРН 1205200031915</span>
-                        <span class="d-block">Россия, Нижний Новгород, Максима Горького 195, 40-4</span>
+                        <a href="mailto:school@codegirl.ru" class="d-block support-link" target="_blank">school@codegirl.ru</a>
+                        <div class="company__info mt-5 text-center">
+                            <span class="d-block">ООО "Кодгерл"</span>
+                            <span class="d-block">ОГРН 1205200031915</span>
+                            <span class="d-block">Россия, Нижний Новгород, Максима Горького 195, 40-4</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer></footer>
-</body>
+            </section>
+        </footer>
+    </body>
 
 </html>
