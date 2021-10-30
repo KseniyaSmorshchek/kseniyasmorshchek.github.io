@@ -54,10 +54,9 @@ function flowingScroll(e) {
     e.preventDefault();
     const el = $(this),
         dest = el.attr('href');
-    console.log(el);
     if ($(dest).length) {
         $('html').animate({
-            scrollTop: $(dest).offset().top - $('.header').height()
+            scrollTop: $(dest).offset().top - ($('.header').length ? $('.header').height() : 0)
         }, 1000);
     }
 }
